@@ -1,3 +1,3 @@
-export interface QueryParams {
+export interface QueryParamsType {
     [key: string]: string | number | boolean;
 }
