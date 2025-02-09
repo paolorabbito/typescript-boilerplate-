@@ -1,0 +1,27 @@
+{
+  "name": "typescript-boilerplate-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node src/main.js",
+    "test": "node --test --require ts-node/register test/*/*.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paolorabbito/typescript-boilerplate-.git"
+  },
+  "author": "Paolo Rabbito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paolorabbito/typescript-boilerplate-/issues"
+  },
+  "homepage": "https://github.com/paolorabbito/typescript-boilerplate-#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3",
+    "@types/node": "^22.13.1"
+  },
+  "dependencies": {}
+}
