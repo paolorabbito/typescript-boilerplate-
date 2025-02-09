@@ -7,7 +7,7 @@
     "build": "tsc",
     "dev": "ts-node src/main.ts",
     "start": "node src/main.js",
-    "test": "node --test --require ts-node/register test/*/*.spec.ts"
+    "test": "node --test --require ts-node/register \"**/*.test.ts\" \"**/*.spec.ts\""
   },
   "repository": {
     "type": "git",

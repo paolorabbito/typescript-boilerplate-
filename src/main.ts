@@ -1,3 +1,7 @@
 import {printHelloWorld} from "./helloWorld";
 
-console.log(printHelloWorld());
+function main() {
+    console.log(printHelloWorld());
+}
+
+main();
