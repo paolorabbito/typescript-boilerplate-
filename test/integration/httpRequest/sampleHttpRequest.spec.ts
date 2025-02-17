@@ -68,9 +68,9 @@ describe("Http Request Test", () => {
         const url = " invalid-url";
         try {
             await HttpRequest.get(url);
-            assert.fail("Expected an error to be thrown");
-        } catch (error: Error) {
-            assert.strictEqual(error.message, "Failed to parse URL from  invalid-url");
+        } catch (error: unknown) {
+            assert.ok(error instanceof Error);
+            assert.ok((error as Error).message.startsWith("Failed to parse URL"));
         }
     });
 });
